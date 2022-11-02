@@ -1,0 +1,9 @@
+.app {
+    border: 1px solid black ;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn {
+    color: blue;
+}

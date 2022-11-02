@@ -1,0 +1,80 @@
+{
+  "posts": [
+    {
+      "id": "c9800c7a-b3ed-4b5f-9504-6b066d6b96de",
+      "title": "dsadsa",
+      "body": "dsadsadsa",
+      "nickname": "Sanek12382",
+      "date": "29-10-2022"
+    }
+  ],
+  "user": [
+    {
+      "firstName": "Поедатель",
+      "lastName": "Кирпичей",
+      "age": "21",
+      "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F9b%2F4a%2Fce%2F9b4ace0e61b5824256cd7b568118686c.png&f=1&nofb=1&ipt=169c89ccfc0393db267023d66e7bbe017837ee82ce1a7c2d186f4f29c5d1edf0&ipo=images",
+      "nickName": "Sanek12382",
+      "id": 1
+    }
+  ],
+  "photos": [
+    {
+      "id": "359c7863-db72-4517-b080-0e1319e92297",
+      "title": "Bricks",
+      "link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.wAJT89TsPv-lAD1KaeeQAAHaHa%26pid%3DApi&f=1&ipt=555ce2c1e0601b95afae114c99edbdaeb599c9cd1557ab2fe6f61b7f6c0cbc8a&ipo=images",
+      "date": "31-10-2022"
+    },
+    {
+      "id": "aca59c8a-fa48-402f-b8e5-4ba8d3bb0327",
+      "title": "amogus",
+      "link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.bbyRQaUzI3tzeCCD_yyBXAHaHa%26pid%3DApi&f=1&ipt=db2f1eb93386059e22a11aebf593595068b5c70e0f07997c14cbc63049606be2&ipo=images",
+      "date": "29-10-2022"
+    },
+    {
+      "id": "613ab768-4e5f-40f8-b9ff-bff42b8227b6",
+      "title": "potato",
+      "link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.TVz1gTTP2ACpfYOXZVm-iwHaFj%26pid%3DApi&f=1&ipt=2d2ebd0cb35ed619ee8ac5ce9ed178ac74c49c3845780c4e2cb3fea1e08bc437&ipo=images",
+      "date": "29-10-2022"
+    },
+    {
+      "id": "f5eade22-79cc-443d-ba3c-cd7a24d2b802",
+      "title": "pottttat",
+      "link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.WsTAVJQ_METVym9hdD1zQwHaHa%26pid%3DApi&f=1&ipt=b44c3f7d927fa681389a1c62016d42c82d4f776a45bbc0ba32c6192cc6e7ba94&ipo=images",
+      "date": "29-10-2022"
+    },
+    {
+      "id": "15c8a0eb-b6db-4efc-9a58-22c746125673",
+      "title": "lil icon",
+      "link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.n46NqCmf1njObE0jrcBMogHaHa%26pid%3DApi&f=1&ipt=1ee32b1dc5625fa43243a7f7ba545926fbc5d2d5190d417b16eb5b48db293c2f&ipo=images",
+      "date": "29-10-2022"
+    },
+    {
+      "id": "16372ce4-540c-49c6-90d0-5bbb4ca496a3",
+      "title": "wide boy",
+      "link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.22AVdeCKJE1AGVkHaXcBVQHaC6%26pid%3DApi&f=1&ipt=90f059b2e5463d174fa7f68c6d32517c85cd7dcb103f8f3727be9ec38e554ec6&ipo=images",
+      "date": "29-10-2022"
+    },
+    {
+      "id": "b2076764-ae16-43ce-8296-8949444adad8",
+      "title": "wider boy",
+      "link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.LJD6Xyuz8BZdIIXL36of7wHaEc%26pid%3DApi&f=1&ipt=38bf352b6ea7c0c0726692fc7aa500c5b90995176f86bb3fc8957871c9fa8ec3&ipo=images",
+      "date": "29-10-2022"
+    },
+    {
+      "id": "f7530076-29b3-49c8-8cf1-087fae1e5fb6",
+      "title": "another widesdds",
+      "link": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.KvFsEveIPFwr84kJ0UQHkAHaDc%26pid%3DApi&f=1&ipt=1af1471ad442fb1c597289fa0628b6b1b331cc6512ca1c08dd74ec4b04f508a5&ipo=images",
+      "date": "31-10-2022"
+    },
+    {
+      "id": "af45c8b3-8608-4f55-890e-505c95e2c8f3",
+      "title": "sad",
+      "link": "sad",
+      "date": "31-10-2022"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
