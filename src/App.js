@@ -9,6 +9,8 @@ import { PagePhoto } from "./pages/PageGallery/index";
 import "./App.css";
 import { getUser } from "./api/userServises";
 import { useFetch } from "./CustomHooks/useFetch";
+import {PageShowCase
+} from "./pages/PageShowCase";
 
 export const UserContext = createContext({});
 
@@ -24,7 +26,9 @@ function App() {
       <UserContext.Provider value={user}>
         <Header />
         <Routes>
+
           <Route path="/" element={<PageHome />} />
+          <Route path="/showCase" element={<PageShowCase />} />
           <Route path="/gallery" element={<PagePhoto />} />
           <Route path="todo" element={user && <PageTodo />} />
           <Route
