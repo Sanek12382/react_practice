@@ -20,21 +20,9 @@
   border-radius: 50%;
   margin-left: 20px;
 }
-.user_info figcaption{
-  width: 100px;
-}
 
-figcaption {
-  text-align: center;
-}
-figure {
-  width: 60px;
-  height: 60px;
-}
-.todo{
-  margin:3px 15px 3px 3px;
-}
-.gallery{
+.header_elemnt{
+  width: auto;
   margin:3px 15px 3px 3px;
 }
 .butt{
@@ -51,7 +39,8 @@ figure {
   transition: 0.5s;
 
 }
-
-.gallery{
-
+.time{
+  margin:3px 15px 3px 3px;
+  margin-right: auto;
 }
+

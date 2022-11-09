@@ -8,7 +8,7 @@ export const ToTodo = () => {
     let user = useContext(UserContext);
 
     return (
-        <figure className={style.todo}>
+        <figure className={style.header_elemnt}>
             <Link to="/todo">
 
                 <button className={style.butt} >Todo list</button>

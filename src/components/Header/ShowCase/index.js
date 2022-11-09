@@ -8,7 +8,7 @@ export const ShowCase = () => {
 
 
     return (
-        <figure className={style.gallery}>
+        <figure className={style.header_elemnt}>
             <Link to="/showCase">
                 <button className={style.butt} >Show case</button>
             </Link>

@@ -9,7 +9,7 @@ export const Gallery = () => {
 
 
     return (
-        <figure className={style.gallery}>
+        <figure className={style.header_elemnt}>
             <Link to="/gallery">
                 <button className={style.butt} >Gallery</button>
             </Link>

@@ -9,12 +9,7 @@ import {ShowCase} from "./ShowCase"
 import moment from "moment";
 const Header = () => {
   const { pathname } = useLocation();
-    let time=0;
-    let a;
-    function setTime(){
-        time=moment().format('h:mm:ss ');;
-    }
-    a=setInterval(setTime, 1000);
+
   return (
     <div className={style.header}>
       {pathname !== "/" &&
@@ -25,9 +20,9 @@ const Header = () => {
       <ToTodo/>
       <Gallery/>
         <ShowCase/>
-        <p>{time}</p>
+        <p className={style.time}>{moment().format('HH:mm ')}</p>/
     </div>
-  );
+  );//bad code                  ^ right there ^ should have used set interval but no cus more urgent stuff needs doing
 };
 
 export default Header;
