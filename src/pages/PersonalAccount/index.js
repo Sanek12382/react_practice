@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../App";
 import { useFetch } from "../../CustomHooks/useFetch";
 import { editUser } from "../../api/userServises";
+import {useFormik} from "formik";
 
 export const PersonalAccount = () => {
   const { firstName, lastName, img, age, nickName } = useContext(UserContext);
@@ -20,18 +21,6 @@ export const PersonalAccount = () => {
     setIsEdit(!isEdit);
   };
 
-  const handleChangeData = (event) => {
-    const name = event.target["name"];
-    const newData = {
-      ...changeData,
-      [name]: event.target.value,
-    };
-    setChangeData(newData);
-  };
-
-  const handleSave = () => {
-    fetchFunc("user", 1, changeData);
-  };
 
   useEffect(() => {
     if (data) {
@@ -39,12 +28,25 @@ export const PersonalAccount = () => {
       setIsEdit(false);
     }
   }, [data]);
+  const formik = useFormik({
+    initialValues: {
+      firstName: '',
+      lastName: '',
+      age: '',
+      img: '',
+      nickName:'',
+    },
 
+    onSubmit: values => {
+    setChangeData(values);
+      fetchFunc("user", 1, values);
+    },
+  });
   return (
     <div>
       <button onClick={handleEditData}>Edit</button>
 
-      {isEdit && <button onClick={handleSave}>Save</button>}
+
       <h1>
         {changeData.firstName} - {changeData.lastName} - возраст:{" "}
         {changeData.age}
@@ -52,41 +54,52 @@ export const PersonalAccount = () => {
       </h1>
       {isEdit && (
         <>
-          <input
-            value={changeData.firstName}
-            onChange={handleChangeData}
-            name={"firstName"}
-            type="text"
-            placeholder={"first name"}
-          />
-          <input
-            value={changeData.lastName}
-            onChange={handleChangeData}
-            name={"lastName"}
-            type="text"
-            placeholder={"last name"}
-          />
-          <input
-            value={changeData.age}
-            onChange={handleChangeData}
-            name={"age"}
-            type="number"
-            placeholder={"age"}
-          />
-          <input
-              value={changeData.img}
-              onChange={handleChangeData}
-              name={"img"}
-              type="text"
-              placeholder={"img"}
-          />
-          <input
-              value={changeData.nickName}
-              onChange={handleChangeData}
-              name={"nickName"}
-              type="text"
-              placeholder={"nickName"}
-          />
+          <form onSubmit={formik.handleSubmit}>
+            <label htmlFor="firstName">First Name</label>
+            <input
+                id="firstName"
+                name="firstName"
+                type="text"
+                onChange={formik.handleChange}
+                value={formik.values.firstName}
+            />
+
+            <label htmlFor="lastName">Last Name</label>
+            <input
+                id="lastName"
+                name="lastName"
+                type="text"
+                onChange={formik.handleChange}
+                value={formik.values.lastName}
+            />
+
+            <label htmlFor="age">Age</label>
+            <input
+                id="age"
+                name="age"
+                type="age"
+                onChange={formik.handleChange}
+                value={formik.values.age}
+            />
+            <label htmlFor="img">Image for profile</label>
+            <input
+                id="img"
+                name="img"
+                type="img"
+                onChange={formik.handleChange}
+                value={formik.values.img}
+            />
+            <label htmlFor="nickName">Nickname</label>
+            <input
+                id="nickName"
+                name="nickName"
+                type="nickName"
+                onChange={formik.handleChange}
+                value={formik.values.nickName}
+            />
+
+            <button type="submit">Submit</button>
+          </form>
         </>
       )}
       <p style={{fontSize:25, fontStyle:"bold"}}>{changeData.nickName}</p>

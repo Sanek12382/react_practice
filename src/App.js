@@ -1,4 +1,4 @@
-import React, { createContext, useEffect } from "react";
+import React, {createContext, useEffect, useState} from "react";
 import { Routes, Route } from "react-router-dom";
 import PageHome from "./pages/PageHome";
 import { PageTodo } from "./pages/PageTodo";
@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import { PersonalAccount } from "./pages/PersonalAccount";
 import { PagePhoto } from "./pages/PageGallery/index";
 
-import "./App.css";
+import style from "./App.css";
 import { getUser } from "./api/userServises";
 import { useFetch } from "./CustomHooks/useFetch";
 import {PageShowCase
@@ -17,14 +17,29 @@ export const UserContext = createContext({});
 function App() {
   const [user, getUserInfo] = useFetch(getUser);
 
+
+
   useEffect(() => {
     getUserInfo("user", 1);
   }, []);
 
+  const [pos, setPos]=useState({x:5, y:5});
+
+  useEffect(() => {
+    document.addEventListener("mousemove",MouseTrack);
+  }, []);
+
+    function MouseTrack(event){
+    //console.log(event.clientX, event.clientY)
+      setPos({x:event.clientX, y:event.clientY })
+
+
+}
   return (
     <div className="app">
       <UserContext.Provider value={user}>
         <Header />
+        <img style={{top: pos.y, left: pos.x, width: "60px", height: "60px", position:"absolute"  } }  src={"https://img.icons8.com/external-filled-line-andi-nur-abdillah/512/external-Rat-laboratory-(filled-line)-filled-line-andi-nur-abdillah.png"} />
         <Routes>
 
           <Route path="/" element={<PageHome />} />
