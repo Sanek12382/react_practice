@@ -23,8 +23,9 @@ function App() {
     getUserInfo("user", 1);
   }, []);
 
-  const [pos, setPos]=useState({x:5, y:5});
 
+ /* <img style={{top: pos.y, left: pos.x, width: "60px", height: "60px", position:"absolute"  } }  src={"https://img.icons8.com/external-filled-line-andi-nur-abdillah/512/external-Rat-laboratory-(filled-line)-filled-line-andi-nur-abdillah.png"} />
+const [pos, setPos]=useState({x:5, y:5});
   useEffect(() => {
     document.addEventListener("mousemove",MouseTrack);
   }, []);
@@ -33,13 +34,12 @@ function App() {
     //console.log(event.clientX, event.clientY)
       setPos({x:event.clientX, y:event.clientY })
 
-
-}
+code to make a rat img follow the cursor
+}*/
   return (
     <div className="app">
       <UserContext.Provider value={user}>
         <Header />
-        <img style={{top: pos.y, left: pos.x, width: "60px", height: "60px", position:"absolute"  } }  src={"https://img.icons8.com/external-filled-line-andi-nur-abdillah/512/external-Rat-laboratory-(filled-line)-filled-line-andi-nur-abdillah.png"} />
         <Routes>
 
           <Route path="/" element={<PageHome />} />
